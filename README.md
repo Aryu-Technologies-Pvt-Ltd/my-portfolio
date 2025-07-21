@@ -1,12 +1,18 @@
 # Portfolio Website
 
-This repository contains a simple portfolio website for a Full Stack Developer. The site includes four main pages:
+This project contains a small portfolio built with [Next.js](https://nextjs.org/).
 
-- `index.html` - Home page
-- `about.html` - About page
-- `projects.html` - Projects page
-- `contact-us.html` - Contact page
+## Getting Started
 
+Install dependencies and start the development server:
+
+```bash
+cd next-portfolio
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000` to view the site.
 ## Usage
 
 Open any of the HTML files in your browser. If you want to serve the site locally, you can use a simple static server, for example with Python:
