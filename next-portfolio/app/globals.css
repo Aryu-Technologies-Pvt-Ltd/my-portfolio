@@ -1,16 +1,16 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  background-color: #f0f2f5;
   color: #333;
 }
 
 header {
-  background-color: #333;
+  background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
   color: #fff;
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -22,19 +22,25 @@ nav a {
   color: #fff;
   margin: 0 1rem;
   text-decoration: none;
+  transition: opacity 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  opacity: 0.75;
 }
 
-main {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
 .hero {
-  background-color: #eee;
-  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
@@ -42,20 +48,24 @@ main {
   background-color: #fff;
   padding: 1rem;
   margin-bottom: 1rem;
+  border-radius: 8px;
   border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 footer {
-  background-color: #333;
+  background: #182848;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
+  margin-top: 1rem;
 }
 
 .contact-form label {
@@ -74,11 +84,57 @@ footer {
   margin-top: 1rem;
   padding: 0.5rem;
   border: none;
-  background-color: #333;
+  background-color: #4b6cb7;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-  background-color: #555;
+  background-color: #355189;
+}
+
+.skills {
+  list-style: square inside;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-section {
+  text-align: center;
+}
+
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem 0;
 }

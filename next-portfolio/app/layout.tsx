@@ -22,7 +22,7 @@ export default function RootLayout({
             <Link href="/contact-us">Contact</Link>
           </nav>
         </header>
-        {children}
+        <div className="container">{children}</div>
         <footer>
           <p>&copy; 2023 John Doe</p>
         </footer>

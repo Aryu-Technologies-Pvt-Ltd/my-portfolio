@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <main>
+    <section className="fade-in">
       <h2>Contact Me</h2>
       <form className="contact-form">
         <label htmlFor="name">Name:</label>
@@ -14,6 +14,6 @@ export default function ContactUs() {
 
         <button type="submit">Send</button>
       </form>
-    </main>
+    </section>
   );
 }
