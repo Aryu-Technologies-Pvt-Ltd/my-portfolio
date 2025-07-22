@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Generate a static site for easier deployment on platforms like Netlify
+  output: 'export',
+
 };
 
 export default nextConfig;
