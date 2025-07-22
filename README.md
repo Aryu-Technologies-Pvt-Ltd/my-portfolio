@@ -34,3 +34,14 @@ and serve the site. If you configure Netlify manually, set the following:
 
 Netlify will host the contents of `next-portfolio/out` so all pages load
 correctly.
+
+
+## Usage
+
+Open any of the HTML files in your browser. If you want to serve the site locally, you can use a simple static server, for example with Python:
+
+```bash
+python3 -m http.server
+```
+
+Then visit `http://localhost:8000` in your browser.
